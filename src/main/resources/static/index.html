@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Smaato Assignment</title>
+</head>
+
+<body>
+<div class="flexbox">
+    <div class="form-container">
+        <article>
+            Spring Web App built for Smaato Java challenge</br>
+            Once per minute all unique requests will be logged to requests.log</br>
+            Requests can also be made through any HTTP client using query parameters</br>
+            Example: <span style="color:green">http://localhost:8080/api</span><span style="color:blue">?id=123&endpoint=2</span>
+        </article>
+    </div>
+    <div class="form-container">
+        <form action="">
+
+            <div class="form-left">
+                <label for="id-box">ID:</label>
+                <input type="text" name="id" placeholder="*Required" id="id-box">
+                <p>Any random string - Example: "123b"</p>
+            </div>
+
+            <div class="form-right">
+                <label for="endpoint-box">Endpoint:</label>
+                <input type="text" name="endpoint" id="endpoint-box">
+                <p>Specific value in table - Example: "1"</p>
+            </div>
+
+            <input type="button" value="REQUEST!" id="btn">
+        </form>
+    </div>
+    <div class="JSON-box">
+        JSON Result will print in this box
+    </div>
+</div>
+<script type="text/javascript" src="scripts/getHandler.js"></script>
+</body>
+
+</html>
